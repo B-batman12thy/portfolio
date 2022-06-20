@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/*variables css*/
+:root{
+  --header-height: 3rem;
+  --font-semi:600;
+  /*--couleurs---*/
+  
+  --hue-color: hsl(191, 39%, 34%);
+  
+}
+
+ul{
+  margin: 0;
+  padding:0;
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+.bd-grid{
+  max-width: 1000px;
+  display: grid;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+.navbar{
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:var(--z-fixed);
+  background-color: #fff;
+  box-shadow: 0px 1px 4px rgba(146,161,176,0.15);
+}
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight:var(--font-semi);
+}
+@media screen and (max-width: 768px){
+  .nav-menu{
+    position: fixed;
+    height: var(--header-height-mobile);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--second-color);
+  }
+}
+  
