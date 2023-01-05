@@ -1,53 +1,62 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
-/*variables css*/
-:root{
-  --header-height: 3rem;
-  --font-semi:600;
-  /*--couleurs---*/
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   
-  --hue-color: hsl(191, 39%, 34%);
   
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 20px;
 }
 
-ul{
-  margin: 0;
-  padding:0;
-  list-style:none;
-}
-a{
-  text-decoration:none;
-}
-.bd-grid{
-  max-width: 1000px;
-  display: grid;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-}
-.navbar{
-  width: 100%;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0px 1px 4px rgba(146,161,176,0.15);
-}
-.nav{
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight:var(--font-semi);
-}
-@media screen and (max-width: 768px){
-  .nav-menu{
-    position: fixed;
-    height: var(--header-height-mobile);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-  }
-}
+/* Add styling for the navbar elements */
+nav a {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  text-decoration: none;
   
+  padding: 10px;
+}
+
+/* Add border on hover */
+@supports (-webkit-text-stroke: 1px black){
+nav a:hover { 
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+}
+.divider{
+height:2px;
+width:80vw;
+background-color:black;
+margin-left:auto;
+margin-right:auto;
+border-radius:100vw
+}
+.presentation{
+  position: absolute;
+width: 630px;
+height: 243px;
+left: 45px;
+top: 285px;
+
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 81px;
+}
+.logo{
+  box-sizing: border-box;
+
+position: absolute;
+width: 467.37px;
+height: 442.57px;
+left: 1018.53px;
+top: 195.03px;
+}
