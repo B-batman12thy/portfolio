@@ -1,39 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
 body{
-  font-family: 'Courier New', Courier, monospace;
+  font-family:"Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 header{
   width: 100%;
   position: fixed;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-  
+  background-color: #fff;
 }
 nav{
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+
+}
+nav .nav-bar ul{
+  display: flex;
+  justify-content: space-between;
 }
 nav .navbar ul li{
-  margin: 10px;
-  display: flex;
-  display: inline-block;
-  justify-content: right;
-
+  display: inline-block; 
+  margin-left: 3rem;
 }
 .navbar{
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .navbar ul li a{
   text-decoration: none;
   color: black;
 }
-#home-menu{
+.home-menu{
   border: 50em;
-  height: 100vh;
-  width: 100px;
-  margin: 40px 40px;
-  padding: 20px 20px;
+  height: 100%;
+  width: 100%;
+  padding: 40px 40px 40px 40px;
   color: black;
+  height: 100vh; 
+}
+p{
+  margin-top: 60px;
+  
+}
+.about-menu{
+  height:100vh;
+  margin:20px;
+  padding: 40px
+}
+.section-title{
+  text-align: center;
+}
+.home-container{
+  display:flex;
+  align-self:flex-end
+}
+h1{
+  width: 200px ;
 }
