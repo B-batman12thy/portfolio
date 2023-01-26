@@ -63,3 +63,21 @@ p{
 h1{
   width: 200px ;
 }
+html{
+  scroll-behavior: smooth;
+}
+.skill-menu{
+  height:100vh;
+  margin:20px;
+  padding: 40px
+}
+.project-menu{
+  height:100vh;
+/*   margin:20px; */
+  padding: 40px
+}
+.contact-menu{
+  height:100vh;
+  margin:20px;
+  padding: 40px
+}
